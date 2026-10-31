@@ -24,15 +24,16 @@ InfoArg toma el texto de un artículo de Wikipedia y hace dos cosas:
 ```bash
 pip install -r requirements.txt
 python -m spacy download es_core_news_lg
-jupyter notebook notebooks/TP_InfoArg.ipynb
+jupyter notebook TP_InfoArg.ipynb
 ```
 
 El notebook descarga el corpus `corpus-wiki-arg.jsonl` (repositorio de la cátedra) en `data/`. Corre en CPU en unos 5 minutos.
 
 ## Estructura
 
-| Carpeta | Contenido |
+| Archivo | Contenido |
 |---|---|
-| `notebooks/` | Notebook completo y ejecutado: EDA, clasificación, extracción y pipeline |
-| `resultados/` | Tablas de métricas (CSV) y borradores de infobox |
-| `figuras/` | Gráficos usados en el informe |
+| `TP_InfoArg.ipynb` | Notebook completo y ejecutado: EDA, clasificación, extracción y pipeline |
+| `clasificacion.csv`, `extraccion_personas.csv` | Tablas de métricas |
+| `borradores_infobox.csv` | Borradores de infobox para los artículos sin ficha |
+| `eda.png`, `clasificacion.png` | Gráficos usados en el informe |
